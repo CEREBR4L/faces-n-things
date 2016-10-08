@@ -6,10 +6,20 @@ document.getElementById('face').classList.add(FacesNThings[Math.floor(Math.rando
 document.getElementById('face').addEventListener('click', function () {
 
 	var face = Math.floor(Math.random() * FacesNThings.length);
-
 	//remove the possibility of getting the same thing twice coz like no one like that...
-	if(FacesNThings[face]){
-		face = face +  1;
+	if(FacesNThings[face] === this.classList[1]){
+
+		if(face === 22){
+			face = 1;
+			console.log("haha")
+		}
+		else{
+			face = face +  1;
+			console.log("lol")
+		}
+
+		console.log(face);
+
 	}
 
 	this.className = "icon";
