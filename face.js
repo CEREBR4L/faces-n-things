@@ -7,9 +7,9 @@ document.getElementById('face').addEventListener('click', function () {
 
 	var face = Math.floor(Math.random() * FacesNThings.length);
 
-	//remove the possibility of gettig the same thing twice coz...
-	if(FacesNThings[face] === this.classList[1]){
-		var face = face +  1;
+	//remove the possibility of getting the same thing twice coz like no one like that...
+	if(FacesNThings[face]){
+		face = face +  1;
 	}
 
 	this.className = "icon";
